@@ -20,8 +20,9 @@ public class main {
 
         int[] userArr = { firstIndex, secondIndex, thirdIndex, fourthIndex };
         System.out.println("User array: " + Arrays.toString(userArr));
+        int[] reversedArray = {fourthIndex, thirdIndex, secondIndex, firstIndex};
+        System.out.println("Reversed Array looks like: " + Arrays.toString(reversedArray));
         scan.nextLine();
-
         // check user String
         System.out.println("Guess the word");
         String userInput = scan.nextLine();
@@ -30,11 +31,5 @@ public class main {
         || mainArray[1].equalsIgnoreCase(userInput)
         || mainArray[2].equalsIgnoreCase(userInput);
         System.out.println("Your value " + userInput + " is " + answer);
-
-        // if (answer == true) {
-        //     System.out.println("Your value " + userInput + " is true") ;
-        // }  else {
-        //     System.out.println("Your value " + userInput + " is false");
-        // }
     }
 }
